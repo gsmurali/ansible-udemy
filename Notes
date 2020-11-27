@@ -1,7 +1,0 @@
-scp -P 2222 -i /Users/Murali/Documents/ansible/.vagrant/machines/control/virtualbox/private_key -r vagrant@127.0.0.1:/home/vagrant/ansible ./backup
-
-
-vagrant ssh-config
-
-
-scp -P 2222 -i /Users/Murali/Documents/ansible/.vagrant/machines/control/virtualbox/private_key -r /Users/Murali/Documents/ansible/ansible vagrant@127.0.0.1:/home/vagrant/
