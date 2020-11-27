@@ -1,0 +1,32 @@
+---
+- hosts: lb01
+  become: true
+  tasks:
+  - name: "update hostname loadbalancer"
+    hostname:
+      name: lb01
+      use: systemd
+
+- hosts: app01
+  become: true
+  tasks:
+  - name: "update hostname app server 1"
+    hostname:
+      name: app01
+      use: systemd
+
+- hosts: app02
+  become: true
+  tasks:
+  - name: "update hostname app server 2"
+    hostname:
+      name: app02
+      use: systemd
+
+- hosts: db01
+  become: true
+  tasks:
+  - name: "update hostname database server"
+    hostname:
+      name: db01
+      use: systemd
